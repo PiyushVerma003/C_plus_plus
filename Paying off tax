@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main() {
+    double sales;
+    cout << "Enter your sales: ";
+    cin >> sales;
+    double state_tax = 0.04;
+    double couty_tax = 0.02;
+
+    double state_money = sales * state_tax;
+    double couty_money = sales * couty_tax;
+
+    double total_tax_money = state_money + couty_money;
+    double sales_left = sales - total_tax_money;
+
+    cout << "The Tax which has to be paid to the state is: " << state_money << endl
+         << "The Tax which has to be paid to the couty is: " << couty_money << endl
+         << "The Total tax which has to be paid is: "        << total_tax_money << endl
+         << "The Sales left after paying off the tax is: "   << sales_left << endl;
+    return 0;
+}
