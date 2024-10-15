@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main() {
+    double far;
+    cout << "Enter the temperature in terms of Fahrenheit: ";
+    cin >> far;
+
+    float c = 5.0 / 9.0;
+    double cel = (far - 32) * c;
+
+    cout << "The temperature conversion from Fahrenheit to Celsius is: " << cel << endl;  // Fixed typos
+    return 0;
+}
