@@ -1,0 +1,14 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+
+using namespace std;
+
+int main(){
+    const short min_value = 1;
+    const short max_value = 6;
+    srand(time(nullptr));
+    short random_number = (rand() % (max_value - min_value + 1)) + min_value;
+    short random_number_two = (rand() % (max_value - min_value + 1)) + min_value;
+    cout << "The random numbers appeared on the rolling two dices are: " << random_number << "," << random_number_two << endl;
+}
