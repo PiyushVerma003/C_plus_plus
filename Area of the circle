@@ -1,0 +1,13 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main() {
+    double rad;
+    cout << "Enter the radious of the circle: ";
+    cin >> rad;
+    const double pi = 3.14;
+    double areaofcircle = pi * pow(rad , 2);
+    cout << "The of the circle of the given radious is: " << areaofcircle << endl;
+}
