@@ -1,0 +1,22 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int bit_1;
+    cout << "Enter any number which will be later converted to binary for further execution: ";
+    cin >> bit_1;
+    int bit_2;
+    cout << "Enter any number which will be later executed to binary for further execution: ";
+    cin >> bit_2;
+
+    cout << endl;
+    cout << "First value you have entered is: " << bit_1 << endl
+         << "Second value you have entered is: " << bit_2 << endl
+         << "Left Shift by 1 of the first numnber: " << (bit_1 << 1) << endl
+         << "Right Shift by 1 of the second number: " << (bit_2 >> 1) << endl
+         << "left Shift by 1 of the second number: " << (bit_2 << 1) << endl
+         << "Right Shift by 1 of the first number: " << (bit_1 >> 1) << endl
+         << "First value | second value: " << (bit_1 | bit_2) << endl
+         << "Firts value & second value: " << (bit_1 & bit_2) << endl;
+}
