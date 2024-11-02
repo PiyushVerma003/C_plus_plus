@@ -1,0 +1,41 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main() {
+    // 1. Conditional (Ternary) Operator
+    int a = 10, b = 20;
+    int max = (a > b) ? a : b;
+    cout << "Maximum of " << a << " and " << b << " is " << max << endl;
+
+    // 2. Comma Operator
+    int x = 0, y = 0;
+    (x = 5, y = 10);  // Both assignments occur
+    cout << "x: " << x << ", y: " << y << endl;
+
+    // 3. Typecast Operator
+    double pi = 3.14159;
+    int intPi = static_cast<int>(pi);  // Typecasting double to int
+    cout << "Typecasted value of pi: " << intPi << endl;
+
+    // 4. sizeof Operator
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
+
+    // 5. Pointer-to-Member Operator
+    int value = 42;
+    int* ptrValue = &value;  // Pointer to the integer
+    cout << "Value using pointer: " << *ptrValue << endl;
+
+    // Demonstrate pointer arithmetic
+    int arr[3] = {1, 2, 3};
+    int* ptrArr = arr;  // Pointer to the array
+    cout << "Array elements using pointer arithmetic: ";
+    for (int i = 0; i < 3; ++i) {
+        cout << *(ptrArr + i) << " ";  // Accessing array elements
+    }
+    cout << endl;
+
+    return 0;
+}
