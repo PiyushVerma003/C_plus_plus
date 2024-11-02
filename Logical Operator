@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool a = true;
+    bool b = false;
+
+    // 1. Logical AND
+    bool andResult = a && b; // true AND false results in false
+    cout << "Logical AND (a && b): " << andResult << endl;
+
+    // 2. Logical OR
+    bool orResult = a || b; // true OR false results in true
+    cout << "Logical OR (a || b): " << orResult << endl;
+
+    // 3. Logical NOT
+    bool notA = !a; // NOT true results in false
+    cout << "Logical NOT (!a): " << notA << endl;
+
+    // Demonstrating with some conditions
+    int x = 10;
+    int y = 20;
+
+    // Using logical operators in conditions
+    if (x < 15 && y > 15) {
+        cout << "Both conditions are true: x < 15 and y > 15" << endl;
+    }
+
+    if (x < 5 || y > 15) {
+        cout << "At least one condition is true: x < 5 or y > 15" << endl;
+    } else {
+        cout << "Neither condition is true: x < 5 nor y > 15" << endl;
+    }
+
+    if (!b) {
+        cout << "b is false, so !b is true" << endl;
+    }
+
+    return 0;
+}
