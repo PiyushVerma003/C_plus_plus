@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5;
+
+    // 1. Unary Plus
+    int unaryPlus = +a; // Result is 5
+    cout << "Unary Plus (+a): " << unaryPlus << endl;
+
+    // 2. Unary Minus
+    int unaryMinus = -a; // Result is -5
+    cout << "Unary Minus (-a): " << unaryMinus << endl;
+
+    // 3. Increment Operator
+    int incremented = ++a; // Pre-increment: a is now 6
+    cout << "Pre-Increment (++a): " << incremented << ", a: " << a << endl;
+
+    // 4. Decrement Operator
+    int decremented = --a; // Pre-decrement: a is now 5
+    cout << "Pre-Decrement (--a): " << decremented << ", a: " << a << endl;
+
+    // Reset a for further demonstration
+    a = 5;
+
+    // 5. Post-Increment Operator
+    int postIncremented = a++; // Post-increment: a is now 6, but value is 5
+    cout << "Post-Increment (a++): " << postIncremented << ", a: " << a << endl;
+
+    // 6. Post-Decrement Operator
+    int postDecremented = a--; // Post-decrement: a is now 5, but value is 6
+    cout << "Post-Decrement (a--): " << postDecremented << ", a: " << a << endl;
+
+    // 7. Logical NOT
+    bool flag = true;
+    bool notFlag = !flag; // Logical NOT: false
+    cout << "Logical NOT (!flag): " << notFlag << endl;
+
+    // 8. Bitwise NOT
+    int b = 5; // In binary: 0101
+    int bitwiseNot = ~b; // Result: -6 (inverts bits)
+    cout << "Bitwise NOT (~b): " << bitwiseNot << endl;
+
+    return 0;
+}
